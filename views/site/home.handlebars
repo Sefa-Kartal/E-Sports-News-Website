@@ -1,0 +1,35 @@
+    <div class="container my-3 my-sm-5" style="background-color: #FEE9D7;">
+        <div class="row">
+            
+            <div class="col-12 col-md-6 col-lg-12">
+                <h1 class="mb-3">En Son Haberler</h1>
+                <hr>
+                {{#each posts}}
+                
+                <article class="mb-3">
+                    <a href="#" class="badge badge-pill badge-cate">{{category.name}}</a>
+                    <header class="mb-2">
+                        <h1 class="main-title">
+                            <a href="">{{title}}</a>
+                        </h1>
+                    </header>
+                    <img src="{{post_image}}" alt="lol-logo" class="news-images">
+                    <p style="white-space: pre-line" id="add">{{truncate content 400}}</p>
+                    <a href="/posts/{{_id}}" class="btn main-btn">Devamını Oku...</a>
+                    <li><span class="writer">{{generateDate date 'MMM DD YYYY'}}</span></li>
+                    <hr>
+                </article>
+                {{/each}}
+                
+                <div>
+                    <nav aria-label="News Pages">
+                        <ul class="pagination justify-content-center">
+                            {{#paginate current=current pages=pages}}
+                            {{/paginate}}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>

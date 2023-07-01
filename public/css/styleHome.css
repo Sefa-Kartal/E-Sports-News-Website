@@ -1,0 +1,178 @@
+body
+{font-family: 'Ubuntu', sans-serif;
+background-color: #F9BF8F;}
+
+h5{
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.badge-cate{
+    background-color:#bb0a21;
+    color:#fff;
+}
+
+.main-title a{
+    color: #bb0a21;
+}
+.main-btn{
+    background:#f81515;
+    color:#fff;
+}
+
+.nav-color{
+    background:#bb0a21;
+}
+
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color:#bb0a21;
+    border-color:#bb0a21;
+}
+.page-link{
+    color: #bb0a21;
+    background: #fff;
+    border: 1px solid #bb0a21;
+}
+
+.news-images{
+    max-width: 70%;
+}
+
+ 
+/* .form-control{
+    background-color: rgb(240, 240, 240);
+}
+ */
+/* User Profile */
+
+.labels {
+    font-size: 22px
+}
+
+.fav-games{
+    margin-left: 43%;
+}
+.checkbox{
+    margin-left: 70px;
+    margin-right: 1px;
+    margin-top: 5px;
+}
+
+/* Full New */
+
+.coverImage{
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+/* Login */
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+}
+
+
+
+.loginButton {
+    background-color: #770505;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: black;
+    color: white;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.container {
+    padding: 16px;
+}
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.loginRegister {
+    background-color: #333;
+    text-align: center;
+}
+
+.loginP {
+    color: #f1f1f1;
+}
+
+
+.loginLabel {
+    color: #f1f1f1;
+  }
+
+
+/* Register */
+
+* {box-sizing: border-box}
+
+.rgscol{
+    width: 50%;
+    float: left;
+    flex: auto;
+    justify-content: center;
+    
+  }
+
+  .registerInput[type=text], .registerInput[type=password], .registerInput[type=email] {
+    width: 97%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .rgsHr {
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .registerbtn {
+    background-color: #770505;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .registerLogin {
+    background-color: #333;
+    text-align: center;
+  }

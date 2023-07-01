@@ -1,0 +1,80 @@
+<body style="background-color:#333;">
+
+    <div class="imgcontainer">
+        <img src="/images/web-site-logo.png" alt="logo" class="Logo" width="200px">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col__2 rgscol">
+                <form action="/users/register" method="post">
+                    <div class="form-group">
+                        <label class="loginLabel" for="email">
+                            <b>Adınız</b></label>
+                        <input class="form-control registerInput" name="name" type="text"
+                            placeholder="Adınızı Girin" required="required"
+                            data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+            </div>
+            <div class="col__2 rgscol">
+                <div class="form-group">
+                    <label class="loginLabel" for="email"><b>Soyadınız</b></label>
+                    <input class="form-control registerInput" name="surname" type="text"
+                        placeholder="Soyadınızı Girin" required="required"
+                        data-validation-required-message="Please enter your surname.">
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+
+            <div class="col__2 rgscol">
+                <div class="form-group">
+                    <label class="loginLabel" for="email"><b>E-posta</b></label>
+                    <input class="form-control registerInput" name="email" type="email"
+                        placeholder="E-postanızı Girin" required="required"
+                        data-validation-required-message="Please enter your E-mail.">
+                </div>
+            </div>
+            <div class="col__2 rgscol">
+                <div class="form-group">
+                    <label class="loginLabel" for="email"><b>Kullanıcı Adı</b></label>
+                    <input class="form-control registerInput" name="username" type="text"
+                        placeholder="Kullanıcı Adınızı Girin" required="required"
+                        data-validation-required-message="Please enter your username.">
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+
+
+            <div class="col__2 rgscol">
+                <div class="form-group">
+                    <label class="loginLabel" for="psw"><b>Şifre</b></label>
+                    <input class="form-control registerInput" name="password" type="password" placeholder="Şifre"
+                        required="required" data-validation-required-message="Please enter your password.">
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="col__2 rgscol">
+                <div class="form-group">
+                    <label class="loginLabel" for="pswRepeat"><b>Şifre (tekrar)</b></label>
+                    <input class="form-control registerInput" name="passwordRepeat" type="password"
+                        placeholder="Şifre(tekrar)" required="required"
+                        data-validation-required-message="Please enter your password(again).">
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <hr class="rgsHr">
+            <div id="success"></div>
+            <button class="registerbtn" type="submit">Kayıt Ol</button>
+            </form>
+
+            <p class="loginP">Bir hesap oluşturarak, <a href="#">Şartlar ve Gizlilik</a>'i kabul etmiş olursunuz.
+            </p>
+
+            <div class="container registerLogin">
+                <p class="loginP">Zaten hesabın var mı? <a href="/users/login">Giriş Yap.</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

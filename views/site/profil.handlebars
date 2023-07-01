@@ -1,0 +1,54 @@
+<body style="background-color: #F9BF8F">
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profiliniz</h4>
+                    </div>
+                    {{#if user}}
+                    <form action="/users/profil/{{user.id}}?_method=PUT" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="_method" value="PUT">
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="labels">Ad</label><input type="text"
+                                    class="form-control" name="name" value="{{user.name}}"></div>
+                            <div class="col-md-6"><label class="labels">Soyad</label><input type="text"
+                                    class="form-control" name="surname" value="{{user.surname}}"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">E-posta</label><input type="text"
+                                    class="form-control" name="email" value="{{user.email}}"></div>
+                            <div class="col-md-6"><label class="labels">Kullanıcı Adı</label><input type="text"
+                                    class="form-control" name="username" value="{{user.username}}"></div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6"><label class="labels">Şifre</label><input type="text"
+                                    class="form-control" name="password" value="{{user.password}}"></div>
+                            <div class="col-md-6"><label class="labels">Şifre (tekrar)</label><input type="text"
+                                    class="form-control" name="passwordRepeat" value="{{user.password}}"></div>
+                        </div>
+                        <div class="row mt-5">
+                            <label class="fav-games">Takip Ettiğiniz Oyunlar</label>
+                            <div class="row mt-5">
+                                <input class="checkbox" type="checkbox" checked="checked" name="remember"> League of
+                                Legends
+                                <input class="checkbox" type="checkbox" checked="checked" name="remember"> Apex Legends
+                                <input class="checkbox" type="checkbox" checked="checked" name="remember"> Counter-Strike:Global Offensive
+                                <input class="checkbox" type="checkbox" checked="checked" name="remember"> Rocket League
+                                <input class="checkbox" type="checkbox" checked="checked" name="remember"> VALORANT
+                            </div>
+
+                        </div>
+
+                        <div class="mt-5 text-center"><a href="/">
+                        <button type="submit" class="btn btn-primary mr-5">Güncelle</button>
+                        </div>
+                    </form>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

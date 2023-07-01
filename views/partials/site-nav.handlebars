@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-md nav-color">
+    <div class="container">
+        <div class="collaspe navbar-collapse" id="myNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/" class="navbar-brand"><img src="/images/web-site-logo.png" alt="logo" class="Logo"
+                            height="70px"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/posts/category/628cdcbc602680cb67959ee9" class="nav-link"><img src="/images/lol-logo.png" alt="lol-logo" class="Logo"
+                            height="70px"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/posts/category/628cdcca602680cb67959eec" class="nav-link"><img src="/images/apex-legends-logo.png" alt="apex-logo"
+                            class="csgo-logo" height="70px"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/posts/category/628cdcf8602680cb67959eef" class="nav-link"><img src="/images/csgo-logo.png" alt="csgo-logo" class="Logo"erId
+                            height="70px"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/posts/category/628cdd03602680cb67959ef2" class="nav-link"><img src="/images/rocket-league-logo.png" alt="rocket-logo"
+                            class="Logo" height="70px"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/posts/category/628cdd0c602680cb67959ef5" class="nav-link"><img src="/images/valorant-logo.png" alt="valo-logo"
+                            class="Logo" height="70px"></a>
+                </li>
+                {{#if displayLink}}
+                
+                <li class="nav-item">
+                    <a class="admin" href="/admin/posts">
+                        <h5>Admin Paneli</h5>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="addpost" href="/posts/new">
+                        <h5>Haber Ekle</h5>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="profile" href="/users/profil/{{id}}">
+                        <h5>Profil</h5>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="logout" href="/users/logout">
+                        <h5>Çıkış Yap</h5>
+                    </a>
+                </li>
+                {{/if}}
+                {{#unless displayLink}}
+                <li class="nav-item">
+                    <a class="signin" href="/users/login">
+                        <h5>Giriş Yap</h5>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="register" href="/users/register">
+                        <h5>Kayıt Ol</h5>
+                    </a>
+                </li>
+                {{/unless}}
+            </ul>
+        </div>
+    </div>
+
+</nav>

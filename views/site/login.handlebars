@@ -1,0 +1,35 @@
+
+<body style="background-color:#333;">
+  <form action="/users/login" method="post">
+    <div class="imgcontainer">
+      <img src="/images/web-site-logo.png" alt="logo" class="Logo" width="200px">
+    </div>
+
+    <div class="container">
+      <div class="col__2">
+        <label class="loginLabel" for="username"><b>Kullanıcı Adı</b></label>
+        <input type="text" class="width__login" placeholder="Kullanıcı Adınızı Girin" name="username" required>
+      </div>
+
+
+
+      <label class="loginLabel" for="psw"><b>Şifre</b></label>
+      <input type="password" placeholder="Şifrenizi Girin" name="password" required>
+
+      <button class="loginButton" type="submit">Giriş Yap</button>
+      <label class="loginLabel">
+        <input type="checkbox" checked="checked" name="remember"> Beni Hatırla
+      </label>
+    </div>
+
+    <div class="container" style="background: color #333;">
+      <a href="/"> 
+      <button type="button" class="cancelbtn" >İptal</button></a>
+      <span class="psw"><a href="#">Şifremi unuttum.</a></span>
+    </div>
+    <div class="container loginRegister">
+      <p class="loginP">Henüz bir hesabın yok mu ? <a href="/users/register">Kayıt Ol.</a></p>
+  </div>
+  </form>
+</body>
+</html>
